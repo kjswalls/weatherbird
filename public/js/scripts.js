@@ -9,7 +9,7 @@ if (navigator.geolocation) {
         long = position.coords.longitude;
 
         // Get current weather data
-        var url = 'http://api.openweathermap.org/data/2.5/weather?lat=' + lat + '&lon=' + long + '&APPID=' + apiKey;
+        var url = 'https://api.openweathermap.org/data/2.5/weather?lat=' + lat + '&lon=' + long + '&APPID=' + apiKey;
 
         $.getJSON(url, function(json) {
 
@@ -37,32 +37,32 @@ if (navigator.geolocation) {
                              $icon = $('.icon-img');
                              switch (firstDigit) {
                                  case '2':
-                                 $icon.attr('src', '/img/cloud-lightning.svg');
+                                 $icon.attr('src', 'img/cloud-lightning.svg');
                                  break;
 
                                  case '3':
                                  case '5':
-                                 $icon.attr('src', '/img/cloud-drizzle-alt.svg');
+                                 $icon.attr('src', 'img/cloud-drizzle-alt.svg');
                                  break;
 
                                  case '6':
-                                 $icon.attr('src', '/img/cloud-snow-alt.svg');
+                                 $icon.attr('src', 'img/cloud-snow-alt.svg');
                                  break;
 
                                  case '7':
-                                 $icon.attr('src', '/img/cloud-fog-alt.svg');
+                                 $icon.attr('src', 'img/cloud-fog-alt.svg');
                                  break;
 
                                  case '8':
-                                 $icon.attr('src', '/img/cloud.svg');
+                                 $icon.attr('src', 'img/cloud.svg');
                                  break;
 
                                  case '9':
-                                 $icon.attr('src', '/img/cloud-wind.svg');
+                                 $icon.attr('src', 'img/cloud-wind.svg');
                                  break;
 
                                  default:
-                                 $icon.attr('src', '/img/sun.svg');
+                                 $icon.attr('src', 'img/sun.svg');
                                  break;
                              }
                          }
