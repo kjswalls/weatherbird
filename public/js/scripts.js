@@ -9,7 +9,7 @@ if (navigator.geolocation) {
         long = position.coords.longitude;
 
         // Get current weather data
-        var url = 'https://api.openweathermap.org/data/2.5/weather?lat=' + lat + '&lon=' + long + '&APPID=' + apiKey;
+        var url = 'http://api.openweathermap.org/data/2.5/weather?lat=' + lat + '&lon=' + long + '&APPID=' + apiKey;
 
         $.getJSON(url, function(json) {
 
