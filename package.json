@@ -1,10 +1,13 @@
 {
   "name": "Weatherbird",
   "version": "1.0.0",
+  "engines": {
+    "node": "6.9.1"
+  },
   "description": "Web app for showing local weather.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js"
   },
   "keywords": [],
   "author": "",
