@@ -1,0 +1,73 @@
+/* ****
+**
+** GLOBAL STYLES
+**
+**** */
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+div {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #4B39C3;
+}
+
+/* ****
+**
+** CONTENT STYLES
+**
+**** */
+
+.content-wrapper {
+    margin-top: 15%;
+}
+
+.desc-wrapper {
+    margin: 0 auto;
+    positon: relative;
+    width: 100%;
+}
+
+.descriptor {
+    font-size: 10em;
+    color: #F8F5F5;
+    position: absolute;
+    left: 30px;
+    right: 30px;
+    top: 30%;
+    z-index: -1;
+}
+
+.temp {
+    font-size: 2.5em;
+    /*width: 5%;*/
+    margin: 0 auto;
+}
+
+.metric {
+    font-size: 1.5rem;
+}
+
+.location {
+    color: #A69E9E;
+}
+
+.city {
+    font-size: 1.2rem;
+}
+
+.country {
+    font-size: 0.7rem;
+}
